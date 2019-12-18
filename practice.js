@@ -15,5 +15,9 @@ var inventory = [
     { id: 14, car_make: "Dodge", car_model: "Ram Van 1500", car_year: 1999 }
   ]
 
-
-  console.log(inventory[inventory.length-1]);
+  function sortCarInventory(inventory) {
+         inventory.sort((a, b) => {
+              b.id - a.id;
+        });  
+}
+  console.log(sortCarInventory(inventory));
